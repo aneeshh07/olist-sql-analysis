@@ -1,0 +1,3 @@
+   # Raw Kaggle data is large and has its own license: don't commit it
+   data/*.csv
+   .DS_Store
