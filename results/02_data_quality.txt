@@ -1,0 +1,70 @@
+   table_name   | row_count 
+----------------+-----------
+ customers      |     99441
+ geolocation    |   1000163
+ order_items    |    112650
+ order_payments |    103886
+ order_reviews  |     99224
+ orders         |     99441
+ products       |     32951
+ sellers        |      3095
+(8 rows)
+
+ year |     first_order     |     last_order      | orders 
+------+---------------------+---------------------+--------
+ 2016 | 2016-09-04 21:15:19 | 2016-12-23 23:16:47 |    329
+ 2017 | 2017-01-05 11:56:06 | 2017-12-31 23:29:31 |  45101
+ 2018 | 2018-01-01 02:48:41 | 2018-10-17 17:30:18 |  54011
+(3 rows)
+
+ order_status | orders |  pct  
+--------------+--------+-------
+ delivered    |  96478 | 97.02
+ shipped      |   1107 |  1.11
+ canceled     |    625 |  0.63
+ unavailable  |    609 |  0.61
+ invoiced     |    314 |  0.32
+ processing   |    301 |  0.30
+ created      |      5 |  0.01
+ approved     |      2 |  0.00
+(8 rows)
+
+ missing_approved | missing_carrier_date | missing_delivered_date | delivered_but_no_date 
+------------------+----------------------+------------------------+-----------------------
+              160 |                 1783 |                   2965 |                     8
+(1 row)
+
+ order_status | orders_without_items 
+--------------+----------------------
+ unavailable  |                  603
+ canceled     |                  164
+ created      |                    5
+ invoiced     |                    2
+ shipped      |                    1
+(5 rows)
+
+ delivered_before_purchase 
+---------------------------
+                         0
+(1 row)
+
+ review_ids_used_more_than_once 
+--------------------------------
+                            789
+(1 row)
+
+ orders_compared | mismatch_over_1_unit 
+-----------------+----------------------
+           98665 |                  312
+(1 row)
+
+ customer_ids | unique_people 
+--------------+---------------
+        99441 |         96096
+(1 row)
+
+ products_without_category 
+---------------------------
+                       610
+(1 row)
+
